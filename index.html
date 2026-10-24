@@ -4,44 +4,58 @@
   <title>Exercise 5: CSS Layout</title>
   <meta charset="utf-8">
   <style>
+    *{ box-sizing: border-box;
+    }
     body {
+      font-family: Times, serif; 
       box-sizing: border-box;
-      width: 70%;
+      width: 85%;
       margin: 0;
       padding: 20px;
       line-height: 1.6;
-      font-family: Times, Georga, serif; 
     }
 
     header {
-      
       background-color: lavender;
-      padding: 30px;
-      margin-bottom: 0;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 25px;
+      position: relative;
+      border: 1px, solid gray;
     }
 
     header h1 {
       margin: 0;
       font-size: 2em;
-      font-family: Ariel, san-serif; 
-
+      font-family: Arial, san-serif; 
     }
 
     .badge {
       background-color: yellow;
-      float: right;
       padding: 5px 15px;
       font-size: 0.8em;
       font-weight: bold;
+      border-radius: 10px;
+      display: inlin-block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      border: 1px solid gray; 
     }
 
     #main-content {
-      padding: 0;
+      background-color: lightyellow;
+      width: 65%;
+      display: inline-block;
       vertical-align: top;
+      padding: 10px;
+      border: 1px solid gray;
+      
     }
 
     #main-content h2 {
       margin-top: 0;
+      font-family: Arial, san-serif;
     }
 
     #main-content p {
@@ -49,17 +63,20 @@
     }
 
     #sidebar {
-      box-sizing: border-box;
-      display: inline;
       background-color: lightgray;
+      width: 30%;
+      display: inline-block;
       float: right;
+      margin-left: 5%;
       padding: 20px;
       vertical-align: top;
+      border: 1px, solid gray;
     }
 
     #sidebar h3 {
       margin-top: 0;
       font-size: 1.2em;
+      font-family: Ariel, san-serif; 
     }
 
     #sidebar ul {
@@ -68,16 +85,18 @@
     }
 
     #sidebar li {
-      
       padding: 8px 0;
+      border-bottom: 1px solid gray;
     }
 
     footer {
-      box-sizing: border-box;
+      background-color: lightblue;
       width: 100%;
-      background-color: blue;
-      padding: 20px;
+      padding: 2px;
       margin-top: 20px;
+      text-align: center;
+      position: sticky;
+      bottom: 0;
     }
   </style>
 </head>
